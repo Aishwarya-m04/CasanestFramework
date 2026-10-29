@@ -12,7 +12,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    def status = bat(script: 'npx playwright test --grep @sytem"', returnStatus: true)
+                    def status = bat(script: 'npx playwright test --grep @system"', returnStatus: true)
                     if (status != 0) {
                         echo "Tests failed, but continuing to generate reports..."
                     }
