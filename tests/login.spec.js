@@ -12,7 +12,7 @@ test(" login POM",async({page})=>
     })
 
     //avoid hardcoding store data in login.json file and fetch it
-    test.only(" login pom",async({page})=>
+    test(" login pom",async({page})=>
     {
         let LoginPage=new loginpage(page)
          let url=logindata.url

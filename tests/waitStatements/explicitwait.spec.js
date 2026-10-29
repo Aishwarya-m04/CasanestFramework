@@ -32,7 +32,7 @@ test("element waits",async({page})=>
     })
     
     //wait for event
-    test.only("waitforEvent",async ({page}) => 
+    test("waitforEvent",async ({page}) => 
         {
            await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0")
            await page.fill('#writeArea',"downloading file")

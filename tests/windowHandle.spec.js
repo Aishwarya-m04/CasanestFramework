@@ -36,7 +36,7 @@ test("multiple tabs",async({browser})=>
             await page3.click("//button[text()='Account']")
             })
 
-            test.only("Handling multiple windows",async({browser})=>
+            test("Handling multiple windows",async({browser})=>
                 {
                  let context=await browser.newContext()
                    let page= await context.newPage() 

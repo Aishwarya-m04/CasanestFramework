@@ -13,7 +13,7 @@ test("Toatal frames",async({browser})=>
         console.log(await page.title());
         
     })
-    test.only("handling frames",async({page})=>
+    test("handling frames",async({page})=>
         {
             await page.goto("https://ui.vision/demo/webtest/frames/")
             await page.waitForTimeout(2000)

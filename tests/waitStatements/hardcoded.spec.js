@@ -9,7 +9,7 @@ test("hard coded wait",async({page})=>
         await page.waitForTimeout(2000)
         await page.locator('button#submit').click()
     })
-    test.only("auto sugg",async({page})=>
+    test("auto sugg",async({page})=>
         {
             await page.goto("https://www.amazon.com/")
             await page.locator("input#twotabsearchtextbox").fill("shoes")

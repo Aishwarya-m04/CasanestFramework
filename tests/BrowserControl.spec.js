@@ -32,7 +32,7 @@ test("BrowserMethods",async({page})=>
 
             })
             //screenshot
-           test.only("screenshot",async({page})=>
+           test("screenshot",async({page})=>
             {
                 await page.goto("https://www.google.com/")
                 let time=new Date().getTime()
