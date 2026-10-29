@@ -29,7 +29,7 @@ pipeline {
             publishHTML(target: [
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
-                reportName: 'Playwright HTML Report',
+                reportName: 'Playwright HTML Report_Build${BUILD_NUMBER}',
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                  alwaysLinkToLastBuild: true,
